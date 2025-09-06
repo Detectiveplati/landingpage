@@ -1,137 +1,35 @@
 /* =========================================
    0) Reset & Base
 ========================================= */
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
 
 /* =========================================
    1) Global Layout Helpers
 ========================================= */
-.container {
-  max-width: 1500px;
-  margin: 0 auto;      /* center page content */
-  padding: 0 40px;     /* side gutters */
-  /* no display:flex here; make specific sections flex */
-}
+
 
 /* =========================================
    2) Header
 ========================================= */
-.header {
-  display: flex;
-  justify-content: space-between;
-  background: #1F2937;
-  padding: 20px 0;
-}
-
-.logo {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 5px;
-  margin-left: 120px;
-}
 
 /* =========================================
    3) Navigation (Header Right Links)
 ========================================= */
-.right ul {
-  display: flex;
-  gap: 20px;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-}
 
-.right ul li {
-  list-style-type: none;
-}
-
-.links {
-  display: flex;
-  color: #D1D5DB;
-  padding-right: 20px;
-}
 
 /* =========================================
    4) Hero / Top Section
 ========================================= */
-.topcontainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 400px;
-  background: #1F2937;
-  padding: 20px;
-}
+
 
 /* =========================================
    5) Main Columns
 ========================================= */
-.leftmain {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin: 10px;
-  border: 1px solid red;
-  align-items:flex-start;
-}
-
-.rightmain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 230px;
-  padding: 10px;
-  margin: 10px;
-  flex: 0.7 0 17%;
-  background-color: grey;
-  color: white;
-}
 
 /* =========================================
    6) Typography
 ========================================= */
-.bigtext {
-  font-size: 48px;
-  font-weight: bold;    /* fixed (removed 'weight: 900;') */
-  text-align: left;
-  color: white;
-  max-width: 350px;
-}
 
-.leftsubtext {
-  font-size: 18px;
-  color: #D1D5DB;
-  text-align: left;
-  max-width: 480px;
-}
-
-.botheader {
-  font-size: 36px;
-  font-weight: 900;
-  text-align: center;
-  margin-top: 20px;
-  color: #1F2937;
-}
 
 /* =========================================
    7) Buttons
 ========================================= */
-.bbutton {
-  background-color: #3B82F6;
-  color: white;
-  border: none;
-  padding: 10px 35px;
-  font-size: 16px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.bbutton:hover {
-  background-color: #2563EB;
-}
