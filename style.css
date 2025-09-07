@@ -1,35 +1,282 @@
 /* =========================================
    0) Reset & Base
 ========================================= */
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+}
 
 /* =========================================
    1) Global Layout Helpers
 ========================================= */
-
+.container {
+   width: 70%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
 
 /* =========================================
    2) Header
 ========================================= */
+.header {
+   background-color: #1F2937;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 30px;
+   flex-wrap: nowrap;
+}
+
+.header>.container {
+   display: flex;
+   justify-content: space-between;
+   /* logo left, nav right */
+   align-items: center;
+   /* vertical centering */
+}
+
+.header-logo {
+   font-size: 18px;
+   font-weight: 900;
+   color: white;
+}
 
 /* =========================================
    3) Navigation (Header Right Links)
 ========================================= */
+.header-right {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
 
+.header-right ul {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+}
+
+.header-right ul li {
+   text-decoration: none;
+   color: rgb(185, 184, 184);
+   font-weight: 500;
+}
 
 /* =========================================
    4) Hero / Top Section
 ========================================= */
+.maincontent {
+   background-color: #1F2937;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 40px 20px;
+   min-height: 300px;
+}
 
+.maincontent>.container {
+   display: flex;
+   justify-content: space-between;
+   /* left and right sections */
+   align-items: center;
+   /* vertical centering */
+   gap: 20px;
+   /* space between left and right */
+}
 
 /* =========================================
    5) Main Columns
 ========================================= */
+.mainleft {
+   flex: 1 0 40%;
+   display: flex;
+   flex-direction: column;
+}
+
+.hero-text {
+   font-size: 40px;
+   font-weight: 900;
+   color: white;
+}
+
+.hero-subtext {
+   font-size: 18px;
+   color: #D1D5DB;
+   max-width: 450px;
+   line-height: 1.5;
+}
+
+.signupbutton {
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: 600;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   color: white;
+   background-color: #3882F6;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 120px;
+}
+
+.mainright {
+   flex: 1 0 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 18px;
+   border: 2px dashed #9CA3AF;
+   height: 200px;
+   text-align: center;
+   background-color: rgb(136, 132, 154);
+}
 
 /* =========================================
-   6) Typography
+   6) Bot Random Section
 ========================================= */
-
+.botcontent {
+   background-color: #ffffff;
+   text-align: center;
+   padding: 40px 20px;
+}
 
 /* =========================================
-   7) Buttons
+   7) Bot Random Columns
 ========================================= */
+.botheader {
+   font-size: 30px;
+   font-weight: 900;
+   color: #1F2937;
+   margin-bottom: 30px;
+}
+
+.botcontainerimages {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   flex-wrap: wrap;
+}
+
+.curvedbox {
+   width: 150px;
+   height: 150px;
+   border-radius: 20px;
+   border-color: #3882F6;
+   border-style: solid;
+   border-width: 5px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.text {
+   max-width: 150px;
+   color: grey;
+}
+
+/* =========================================
+   8) Quote Section
+========================================= */
+.quotecontainer {
+   background-color: #e5e7eb;
+   padding: 100px;
+   margin-top: 120px;
+}
+.quotecontainer > .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+
+}
+.quotetext {
+   font-size: 32px;
+   color: #6d7176;
+   font-weight: 300;
+   margin-bottom: 10px;
+   font-style: italic;
+   display: flex;
+   justify-content: flex-start;
+   text-align: left;
+}
+
+.quoteauthor {
+   font-size: 22px;
+   font-weight: 600;
+   color: #0c0c0c;
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+}
+
+/* =========================================
+   7) Call to action Section
+========================================= */
+.signupcontainer {
+   background-color: #3882F6;
+   color: white;
+   display: flex;
+   align-items: center;
+   max-width: 800px;
+   margin: 0 auto;
+   margin-top: 80px;
+   border-radius: 10px;
+   height: 120px;
+   padding: 20px;
+}
+.signupsubtexts {
+   display: flex;
+   flex: 3;
+   text-align:left;
+}
+.signuptext {
+   font-size: 24px;
+   font-weight: 600;
+   margin-bottom: 10px;
+   display:flex;
+   justify-content: left;
+   flex: 1;
+   margin-left: 100px;
+}
+.signupsubtext {
+   font-size: 16px;
+   color: #D1D5DB;
+   margin-bottom: 20px;
+   display:flex;
+   justify-content: center;
+   margin-left: 100px;
+}
+
+.wsignupbutton {
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: 600;
+   border: 2px solid white;
+   border-radius: 5px;
+   cursor: pointer;
+   color: white;
+   background-color: #3882F6;
+   display: flex;
+   justify-content: center;
+   width: 120px;
+   margin-left: 90px;
+}
+
+/* =========================================
+   7) Footer Section
+========================================= */
+.footer {
+   background-color: #1F2937;
+   color: white;
+   text-align: center;
+   padding: 40px 0;
+   position: relative;
+   width: 100%;
+   margin-top: 100px;
+}
